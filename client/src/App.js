@@ -7,6 +7,12 @@ import Admin from './Admin';
 import Signup from './Signup';
 import Login from './Login';
 import './App.css'; 
+import axios from 'axios';
+
+axios.defaults.headers = {
+  "Content-Type":"application/json",
+  "ngrok-skip-browser-warning":"69420",
+};
 
 function App() {
   return (
