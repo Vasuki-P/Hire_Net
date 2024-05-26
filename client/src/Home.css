@@ -1,0 +1,444 @@
+/* front page */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.homepage {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.515); /* Transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.homepage .container h1,p{
+  color: #000;
+}
+h1 {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.user-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+
+
+/* signup login */
+.auth-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.auth-left, .auth-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-left img {
+  width: 100%;
+  height: auto;
+}
+
+.auth-right {
+  padding: 2rem;
+  
+}
+.auth-right-conatiner{
+  background-color: #f6f5f5;
+  width: 250px;
+  padding: 30px;
+  border-style: outset;
+  border-radius: 15px;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.sign{
+  padding: 0.75rem 1.5rem;
+  background-color: #3545fa;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+}
+
+
+/* Home */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .slideshow-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  
+  .mySlides.active {
+    opacity: 1;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+ 
+  
+  
+/* Post Job*/
+.pj{
+  background-color: rgb(241, 245, 245);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.postjob {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.Information {
+  margin-bottom: 20px;
+}
+
+.Information label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.Information input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Information button {
+  margin-top: 5px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Information button:hover {
+  background-color: #0056b3;
+}
+
+/* view resume*/
+.viewresume table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.viewresume th, td {
+  border: 1px solid #555454;
+  padding: 8px;
+  text-align: left;
+}
+
+.viewresume th {
+  background-color: #adabab;
+}
+
+.viewresume tr:hover {
+  background-color: #f2f2f2;
+}
+.viewresume{
+  background-color: rgb(241, 245, 245);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.viewresume .filter-input {
+  padding: 8px 40px 8px 12px; /* Adjust padding to accommodate the icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 300px;
+  position: relative; /* Position the icon relative to the input */
+}
+.viewresume td a{
+  display: inline-block;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  background-color: #00b7ff;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+
+}
+.viewresume td a:hover {
+  background-color: #003975;
+}
+.viewresume .pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.viewresume .pagination button {
+  margin: 0 2px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.viewresume .pagination button:hover {
+  background-color: #ddd;
+}
+
+
+/* search job */
+/* Styles for the SearchJob component */
+
+/* Styles for the SearchJob component */
+
+.searchjob {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.filter-input {
+  padding: 8px 40px 8px 12px; /* Adjust padding to accommodate the icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 300px;
+  position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  
+}
+
+.grid-item {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-color: #f6fcfc;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+.grid-container button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #00b7ff;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.grid-container button:hover {
+  background-color: #003975;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #a6f5ab;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+/* CSS for the modal dialog */
+.dialog {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f3f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.dialog button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dialog button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Styles for the Modal component */
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+
+/* Footer.css */
+/* Footer.css */
+
+.footer {
+  background-color: #333; /* Dark background color for the footer */
+  color: #fff; /* White text color */
+  padding: 20px 0; /* Top and bottom padding */
+  text-align: center; /* Center-align the text */
+}
+
+.footer-content {
+  max-width: 1200px; /* Max width for the content */
+  margin: 0 auto; /* Center align the content */
+  padding: 0 20px; /* Left and right padding */
+}
+
+.footer-content p {
+  margin: 0 0 10px; /* Bottom margin for the paragraph */
+  color: white;
+}
+
+.footer-links {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the links horizontally */
+}
+
+.footer-links li {
+  margin: 0 10px; /* Horizontal margin between list items */
+}
+
+.footer-links button {
+  background: none; /* Remove default button background */
+  border: none; /* Remove default button border */
+  color: #fff; /* White text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  padding: 5px 10px; /* Padding inside the button */
+  text-decoration: none; /* Remove text underline */
+  transition: color 0.3s ease; /* Transition for color change */
+}
+
+.footer-links button:hover {
+  color: #00aaff; /* Light blue color on hover */
+}
